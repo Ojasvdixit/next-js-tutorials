@@ -2,6 +2,7 @@
 
 //@ 👉 Basically, it’s a folder inside the app/ directory wrapped in parentheses ( ), and Next.js ignores the folder name when building routes.
 
+import { inter } from "@/app/ui/fonts";
 export default function LoginPage() { 
-  return <div>Login Page</div>;
+  return <div className= {inter.className}>Login Page</div>;
 }
