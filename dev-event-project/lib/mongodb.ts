@@ -32,6 +32,7 @@ async function connectDB(): Promise<typeof mongoose> {
   if (cached.conn) {
     return cached.conn;
   }
+  console.log('url ', MONGODB_URI)
 
   // Return existing connection promise if one is in progress
   if (!cached.promise) {
